@@ -1,0 +1,26 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 7fe89dbc-b34b-4262-a11c-983f048121ba
+  title: Python workshops for quantitative models in organismal biology
+  short_title: Python workshops
+  description: 'A collection of python demonstrations for the workshop "Quantitative Models in Organismal Biology\: Insights and Interconnections" to get participants up-to-speed in using python'
+  keywords: [ python, models ]
+  authors:
+    - name: Wing-Ho Ko
+      affiliation: School of Oceanography, University of Washington
+  # github:
+  toc:
+    - file: index.md
+    - file: 00-1-installing.md
+    - file: 01-1-basic_python.ipynb
+    - file: 01-2-visualizations.ipynb
+    - file: 02-1-linear_algebra.ipynb
+    - file: 02-2-ODE.ipynb
+    - file: 03-1-numerical_methods.md
+    - file: 04-1-interactives.ipynb
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
