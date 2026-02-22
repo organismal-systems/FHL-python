@@ -37,9 +37,9 @@ Once mamba is finished, follow the instruction it provides to activate the `osym
 
 When the `osym` environment is activated, the prompt of the terminal should start with the text `(osym)`.
 
-![A terminal with the "osym" environment activated](img/mamba_activate.png)
+![A terminal with the "learn" environment activated](img/mamba_activate.png)
 
-**Figure**: A terminal with the "osym" environment activated.
+**Figure**: A terminal with the "learn" environment activated.
 
 ## Starting JupyterLab
 

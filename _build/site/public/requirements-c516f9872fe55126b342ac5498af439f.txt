@@ -11,10 +11,8 @@ joblib
 mesa
 networkx
 ipykernel
-ipywidgets
 ipympl
 jupyter-lsp
 jupyterlab
 notebook
-voila
 jupyter-book
