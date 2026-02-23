@@ -9,7 +9,8 @@ project:
   authors:
     - name: Wing-Ho Ko
       affiliation: School of Oceanography, University of Washington
-  # github:
+  license: CC-BY-4.0
+  github: https://github.com/organismal-systems/FHL-python
   toc:
     - file: index.md
     - file: 00-1-installing.md
@@ -21,6 +22,6 @@ project:
     - file: 04-1-interactives.ipynb
 site:
   template: book-theme
-  # options:
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
+  options:
+    favicon: img/OsyM_favicon.ico
+    logo: img/OSYMlogo.png
