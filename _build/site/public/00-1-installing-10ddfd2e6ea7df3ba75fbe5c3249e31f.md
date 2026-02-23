@@ -1,9 +1,0 @@
----
-title: Installing python
-short_title: "Prelude: installing python"
-subtitle: Use MyST Markdown to author rich narrative and integrate computation.
-subject: Quickstart tutorial
----
-
-There are a number of ways to install python locally on your computer. We recommend using the miniforge distribution. Here is the link to the [miniforge installer](https://conda-forge.org/download/)
-
