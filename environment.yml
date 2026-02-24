@@ -1,0 +1,24 @@
+name: osym
+channels:
+  - conda-forge
+dependencies:
+  - python==3.12.*
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas<3
+  - seaborn
+  - xarray
+  - statsmodels
+  - scikit-learn
+  - joblib
+  - mesa
+  - networkx
+  - ipykernel
+  - ipywidgets
+  - ipympl
+  - jupyter-lsp
+  - jupyterlab
+  - notebook
+  - voila
+  - jupyter-book

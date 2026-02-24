@@ -5,7 +5,9 @@ short_title: "Prelude: installing python"
 
 ## Installing the miniforge python distribution
 
-There are a number of ways to install python locally on your computer. We recommend using the [miniforge distribution](https://conda-forge.org/download/).
+There are a number of ways to install python locally on your computer. We recommend using the [miniforge distribution](https://conda-forge.org/download/) or the [miniconda distribution](https://www.anaconda.com/docs/getting-started/miniconda/install#windows-installation). In the instructions below we assume you will be installing the miniforge distribution. The instructions for installing the miniconda distribution is similar except that all invocation `mamba` needs to be replaced by `conda`.
+
+Note that on each computer you should install **at most one** of miniforge, miniconda, or anaconda. Otherwise your computer may get confused by the existence of multiple copies of the same utilities.
 
 Head to the linked page and download the installer suitable for your OS. Once the installer is downloaded, follow the installation instruction and install the miniforge distribution. Once miniforge is installed, start a terminal (command prompt in Windows, Terminal in MacOS, etc.) with the base mamba environment activated (in Windows there is a separate icon for that, in Mac your Terminal should be configured to activate the base environment automatically). A mamba enabled terminal with the base environment activated should have a prompt that started with the text `(base)`.
 
@@ -17,12 +19,12 @@ Head to the linked page and download the installer suitable for your OS. Once th
 
 The base environment has a very limited number of third-party packages installed. So our next step is to install the third-party packages that are commonly used in scientific computing (numpy, scipy, pandas, matplotlib, etc.). While we can install these packages in the base environment, we recommend doing so in a new environment. In this appendix we'll call this new environment "osym", but you should feel free to change that name in the subsequent code.
 
-The easiest way to create a new environment with the desired packages installed is to use a requirements.txt file. You can find an example of the requirements.txt file [here](data/requirements.txt).
+The easiest way to **create a new environment** with the desired packages installed is to use a environmental.yml file. An environment.yml file suitable for the python workshops is [linked here](environment.yml).
 
-Download the requirements.txt file to your local computer, then, change directory to the location of the requirements file, and execute the following command:
+Download the environment.yml file to your local computer, then, change directory to the location of the environment file, and execute the following command:
 
 ```
-    mamba create -n osym --file requirements.txt
+    mamba create -n osym --file environment.yml
 ```
 
 (change the name `osym` to whatever way you want to name your environment)
@@ -74,3 +76,30 @@ If your package is not available on conda-forge it is likely distributed via pyp
 As with `mamba install`, the new package is now permanently a part of your python environment and you all you need to do to use it in a notebook is to import the package.
 
 To install and use other packages, just replace `pymc` in the above lines with the name of the package you need.
+
+## Note: creating and using additional environments
+
+One reason why we recommend miniforge and miniconda is that they provide a convenient way to isolate package dependecies through the use of environments. Occasionally, you may run into two projects having contradicting package requirements. By creating a separate environment for each project, the two projects can coexist on the same computer without conflicts.
+
+We note that this is the approach taken by the "Quantitative Approaches to Organismal Biology" executable book, wherein each separate executable section that is functionally independent from the other has its own unique github repository and enviroenment.yml file.
+
+To create a new environment, follow the same instructions we used to create the osym environment. i.e., 
+
+```
+    mamba create -n new_env --file environment.yml
+```
+
+Where `new_env` should be replaced by the desired environment name and the environment.yml file (or requirement.txt file, which has a slightly different syntax) should be tailored to the new project.
+
+To switch to the new environment `new_env`, execute:
+
+```
+    mamba activate new_env
+```
+
+And to deactivate the current environment, execute:
+
+```
+    mamba deactivate
+```
+
