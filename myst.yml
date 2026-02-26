@@ -18,7 +18,7 @@ project:
     - file: 01-2-visualizations.ipynb
     - file: 02-1-linear_algebra.ipynb
     - file: 02-2-ODE.ipynb
-    - file: 03-1-numerical_methods.md
+    - file: 03-1-Monte_Carlo.ipynb
     - file: 04-1-interactives.ipynb
 site:
   template: book-theme
