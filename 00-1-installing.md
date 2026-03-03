@@ -1,6 +1,6 @@
 ---
 title: "Installing python"
-short_title: "Prelude: installing python"
+short_title: "Prelude #1: installing python"
 ---
 
 ## Installing the miniforge python distribution

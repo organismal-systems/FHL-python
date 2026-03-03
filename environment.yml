@@ -22,3 +22,4 @@ dependencies:
   - notebook
   - voila
   - jupyter-book
+  - jupyterlab-git
