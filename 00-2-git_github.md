@@ -29,7 +29,7 @@ Git will then do the work and create a subfolder containing the repo.
 
 ![Obtaining url for git clone](img/Github_code_menu.png)
 
-**Figure**: GitHub webpage from which the git clone url can be found.
+**Figure 1**: GitHub webpage from which the git clone url can be found.
 
 When you do work on the local repo, the contents between your local repo and the repo on GitHub will become out of sync. The same can happen if the GitHub repo is updated. To sync your local repo to the GitHub version (**note**: this will unset the work you have done locally), change directory to **inside** the local repo, then execute:
 
@@ -38,4 +38,25 @@ When you do work on the local repo, the contents between your local repo and the
 ```
 
 Which will sync your repo with the latest version on GitHub.
+
+## Using the jupyterlab-git extension
+
+An alternative to using the command line is to use the `jupyterlab-git` extension. Note however that you **still need to install git** on top of having the extension installed.
+
+If you create the `osym` environment following the instructions from the previous section the extension should already be installed and activated for you. What the extension does is to add a "git" pane on the left icon menu of Jupyter Lab. When you click on the icon from outside a git repo, the left pane will show buttons for cloning existing repo. When you click on the button, a dialog will open where you can paste the url of the remote repo and start cloning.
+
+![Option to git clone from jupyterlab-git](img/jupyterlab-git-clone.png)
+
+**Figure 2**: Jupyter Lab page with the git pane activated and the cloning button clicked.
+
+In addition, when you open the "git" pane from **within** a git repo, you will find thatit provides information on which file(s) have been modified. It also allows you to refresh the remote repo and check if anything has changed. There is also a "cloud download" button that lets you pull from the remote repository (again, doing so will wrap your local modifications). See figure below.
+
+![Option to git pull from jupyterlab-git](img/jupyterlab-git-pull.png)
+
+**Figure 3**: Jupyter Lab page with the git pane activated and the git pull option highlighted.
+
+## Further Git functionalities
+
+In addition to cloning existing repo, you can also create your own repo and post them on Github. Some good resources for learning these functions of Git and GitHub can be found on [RealPython](https://realpython.com/python-git-github-intro/) and [HubSpot](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners).
+
 
