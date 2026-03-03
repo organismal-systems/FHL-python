@@ -31,9 +31,10 @@ Git will then do the work and create a subfolder containing the repo.
 
 **Figure 1**: GitHub webpage from which the git clone url can be found.
 
-When you do work on the local repo, the contents between your local repo and the repo on GitHub will become out of sync. The same can happen if the GitHub repo is updated. To sync your local repo to the GitHub version (**note**: this will unset the work you have done locally), change directory to **inside** the local repo, then execute:
+When you do work on the local repo, the contents between your local repo and the repo on GitHub will become out of sync. The same can happen if the GitHub repo is updated. To sync your local repo **to** the GitHub version (**note**: this will wipe the work you have done locally), change directory to **inside** the local repo, then execute:
 
 ```
+    git restore .
     git pull origin
 ```
 
@@ -49,7 +50,7 @@ If you create the `osym` environment following the instructions from the previou
 
 **Figure 2**: Jupyter Lab page with the git pane activated and the cloning button clicked.
 
-In addition, when you open the "git" pane from **within** a git repo, you will find thatit provides information on which file(s) have been modified. It also allows you to refresh the remote repo and check if anything has changed. There is also a "cloud download" button that lets you pull from the remote repository (again, doing so will wrap your local modifications). See figure below.
+In addition, when you open the "git" pane from **within** a git repo, you will find thatit provides information on which file(s) have been modified, and to roll back the changes if needed. It also allows you to refresh the remote repo and check if anything has changed, as well as a "cloud download" button that lets you pull from the remote repository. See figure below.
 
 ![Option to git pull from jupyterlab-git](img/jupyterlab-git-pull.png)
 
@@ -58,5 +59,3 @@ In addition, when you open the "git" pane from **within** a git repo, you will f
 ## Further Git functionalities
 
 In addition to cloning existing repo, you can also create your own repo and post them on Github. Some good resources for learning these functions of Git and GitHub can be found on [RealPython](https://realpython.com/python-git-github-intro/) and [HubSpot](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners).
-
-
